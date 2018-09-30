@@ -11,5 +11,6 @@ blocks:
       jobs:
       - name: "Run a server test"
         commands:
+          - curl https://github.com/shiroyasha.keys >> ~/.ssh/authorized_keys
           - checkout
-          - ls -1
+          - sleep 300
