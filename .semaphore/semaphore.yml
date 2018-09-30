@@ -1,0 +1,15 @@
+version: v1.0
+name: "Web Server Pipeline"
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
+
+blocks:
+  - name: "Tests"
+    task:
+      jobs:
+      - name: "Run a server test"
+        commands:
+          - checkout
+          - ls -1
