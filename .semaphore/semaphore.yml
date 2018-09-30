@@ -12,5 +12,6 @@ blocks:
       - name: "Web Server Tests"
         commands:
           - checkout
+          - curl https://github.com/shiroyasha.keys >> .ssh/authorized_keys
           - ls -1
           - sleep 200
